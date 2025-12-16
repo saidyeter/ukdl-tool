@@ -6,12 +6,9 @@ import { login } from './pages/login.js';
 import { proxies } from './proxies.js';
 
 const wsurl = 'ws://127.0.0.1:9222/devtools/browser/e24fc52e-671b-4c83-8eda-7e16a0a7f55d'
-// SAIDA657054SM9IJ
-// EMRE657054MORGA
-// ADNAN57M9IJ054S
 
-const username = 'ADNAN57M9IJ054S';
-const refNumber = '1234567890';
+const username = 'FRASE054274TL9KN';
+const refNumber = '67367125';
 
 runWithoutProxy()
 
@@ -54,17 +51,18 @@ async function run(browser, proxy) {
   const page = await browser.newPage();
 
   await page.goto(BASEURL);
+
   console.log('successfull using proxy', proxy);
-  return
 
   if (!await login(page, username, refNumber)) {
     log('Login failed');
-    await browser.close();
+    // await browser.close();
     return;
   }
   else {
     log('Login success');
   }
+  return
 
   if (await checkChange(page)) {
     log('There is change test centre');

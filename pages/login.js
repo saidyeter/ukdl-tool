@@ -18,7 +18,7 @@ export async function login(page, username, refNumber) {
 
     await page.locator(HOME_BUTTON).click();
     // await page.waitForTimeout(1000);//??
-    await page.waitForNavigation({ waitUntil: 'networkidle2' })
+    await page.waitForNavigation({ waitUntil: 'networkidle2', timeout: 100000 })
 
     const exists = await page.$eval(SIGN_OUT_BUTTON, (el) => el.innerText == "Sign out").catch(() => false)
     return exists
