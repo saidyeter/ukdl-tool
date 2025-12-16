@@ -5,7 +5,9 @@ import { checkChange } from './pages/check-change.js';
 import { login } from './pages/login.js';
 import { proxies } from './proxies.js';
 
-const wsurl = 'ws://127.0.0.1:9222/devtools/browser/e24fc52e-671b-4c83-8eda-7e16a0a7f55d'
+// "C:\Program Files\Google\Chrome\Application\chrome.exe" --remote-debugging-port=9998 --user-data-dir="C:\Users\Admin\Desktop\said"
+// http://localhost:9998/json/version
+const wsurl = 'ws://127.0.0.1:9998/devtools/browser/233bb613-db8d-4d08-ace0-1c81023b54cd'
 
 const username = 'FRASE054274TL9KN';
 const refNumber = '67367125';

@@ -1,6 +1,9 @@
 import { log } from "../lib/logger.js";
 
-import { BASEURL, HOME_BUTTON, HOME_FIRST_INPUT, HOME_SECOND_INPUT, SIGN_OUT_BUTTON } from '../lib/consts.js';
+import {
+  BASEURL, HOME_BUTTON, HOME_FIRST_INPUT, HOME_SECOND_INPUT, SIGN_OUT_BUTTON,
+  STANDBY_MESSAGE_SELECTOR
+} from '../lib/consts.js';
 
 export async function login(page, username, refNumber) {
   try {
@@ -18,6 +21,17 @@ export async function login(page, username, refNumber) {
 
     await page.locator(HOME_BUTTON).click();
     // await page.waitForTimeout(1000);//??
+
+    // interstitial-inprogress-box
+    // #interstitial-inprogress-box > h3
+    let standbyMessage = await page.$eval(STANDBY_MESSAGE_SELECTOR, () => true).catch(() => false)
+    while (standbyMessage) {
+      await new Promise(resolve => setTimeout(resolve, 1000));
+      standbyMessage = await page.$eval(STANDBY_MESSAGE_SELECTOR, () => true).catch(() => false)
+      log('there is stilll standbyMessage')
+    }
+
+
     await page.waitForNavigation({ waitUntil: 'networkidle2', timeout: 100000 })
 
     const exists = await page.$eval(SIGN_OUT_BUTTON, (el) => el.innerText == "Sign out").catch(() => false)
