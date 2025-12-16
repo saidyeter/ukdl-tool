@@ -1,4 +1,5 @@
 import puppeteer from 'puppeteer';
+import useProxy from 'puppeteer-page-proxy';
 import { BASEURL } from './lib/consts.js';
 import { log } from './lib/logger.js';
 import { checkChange } from './pages/check-change.js';
@@ -17,7 +18,8 @@ runWithoutProxy()
 async function runWithoutProxy() {
   // Launch the browser and open a new blank page.
   const browser = await //puppeteer.launch({ headless: false });
-    puppeteer.connect({ browserWSEndpoint: wsurl })
+    puppeteer.connect({ browserWSEndpoint: wsurl, })
+
   try {
     await run(browser);
   } catch (error) {
@@ -51,7 +53,7 @@ async function run(browser, proxy) {
   }
   // Launch the browser and open a new blank page.
   const page = await browser.newPage();
-
+  await useProxy(page, 'http://45.85.118.142:80')
   await page.goto(BASEURL);
 
   console.log('successfull using proxy', proxy);
