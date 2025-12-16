@@ -5,6 +5,7 @@ import { checkChange } from './pages/check-change.js';
 import { login } from './pages/login.js';
 import { proxies } from './proxies.js';
 
+const wsurl = 'ws://127.0.0.1:9222/devtools/browser/e24fc52e-671b-4c83-8eda-7e16a0a7f55d'
 // SAIDA657054SM9IJ
 // EMRE657054MORGA
 // ADNAN57M9IJ054S
@@ -16,8 +17,8 @@ runWithoutProxy()
 
 async function runWithoutProxy() {
   // Launch the browser and open a new blank page.
-  const browser = await puppeteer.launch({ headless: false });
-
+  const browser = await //puppeteer.launch({ headless: false });
+    puppeteer.connect({ browserWSEndpoint: wsurl })
   try {
     await run(browser);
   } catch (error) {
@@ -42,18 +43,19 @@ async function run(browser, proxy) {
   if (!BASEURL) {
     throw new Error('BASEURL is not defined');
   }
+  if (!browser) {
+    throw new Error('browser is not defined');
+  }
   const args = [];
   if (proxy) {
     args.push('--proxy-server=' + proxy);
-  }
-  if (!browser) {
-    browser = await puppeteer.launch({ headless: false, args });
   }
   // Launch the browser and open a new blank page.
   const page = await browser.newPage();
 
   await page.goto(BASEURL);
   console.log('successfull using proxy', proxy);
+  return
 
   if (!await login(page, username, refNumber)) {
     log('Login failed');
@@ -63,7 +65,6 @@ async function run(browser, proxy) {
   else {
     log('Login success');
   }
-  return
 
   if (await checkChange(page)) {
     log('There is change test centre');
