@@ -26,9 +26,9 @@ export async function login(page, username, refNumber) {
     // #interstitial-inprogress-box > h3
     let standbyMessage = await page.$eval(STANDBY_MESSAGE_SELECTOR, () => true).catch(() => false)
     while (standbyMessage) {
+      log('there is still standbyMessage')
       await new Promise(resolve => setTimeout(resolve, 1000));
       standbyMessage = await page.$eval(STANDBY_MESSAGE_SELECTOR, () => true).catch(() => false)
-      log('there is stilll standbyMessage')
     }
 
 
