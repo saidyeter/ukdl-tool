@@ -1,0 +1,43 @@
+fetch("https://driverpracticaltest.dvsa.gov.uk/login",
+{
+  "headers": {
+    "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "accept-language": "en-GB,en-US;q=0.9,en;q=0.8",
+    "priority": "u=0, i",
+    "sec-ch-ua": "\"Google Chrome\";v=\"143\", \"Chromium\";v=\"143\", \"Not A(Brand\";v=\"24\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Windows\"",
+    "sec-fetch-dest": "document",
+    "sec-fetch-mode": "navigate",
+    "sec-fetch-site": "none",
+    "sec-fetch-user": "?1",
+    "upgrade-insecure-requests": "1",
+    "cookie": "visid_incap_1979199=322pzzm/Sc2hnTMzSGLP0727QWkAAAAAQUIPAAAAAAB5FWUPGtCSfVoMUXsgWgka; incap_ses_1332_1979199=GYAKWARwnS4PDc2lATd8Ek7EQWkAAAAAN8YXW3gTx8GDMITFBICDBQ==; JSESSIONID=3FD00ADA6CF34B9D7B5B9CDCB7232A90; nlbi_1979199=U07TZEKym0Ccb/zezpe5SwAAAABSge4dfXWUKyN2Zhk74Mzg; AWSALB=q82p1t7MOYHg3+Outpaw9yBJbDLc/yRkPjoB6Yd8H0aYYcKE3Pd3HHQz5f+YDIhen/cgbRaBQQtiuzQQAamS0HAf6xfDQtI4CqXcgdYoK46FZPepciUxJTLksgDZ; AWSALBCORS=q82p1t7MOYHg3+Outpaw9yBJbDLc/yRkPjoB6Yd8H0aYYcKE3Pd3HHQz5f+YDIhen/cgbRaBQQtiuzQQAamS0HAf6xfDQtI4CqXcgdYoK46FZPepciUxJTLksgDZ; incap_sh_1979199=88tBaQAAAABeSHUqBgAQ85eHygYczPUMGVz2Bf3qzo8Jv/qJ; nlbi_1979199_2147483392=mMzLd/R2EU8w6m5izpe5SwAAAACBAUpljgj4pxWr0C8fzgYl; reese84=3:aqMNaHLpwIthaJQu+poE3w==:KTkaI++x1TwulDm68wyQgroiDA2uRb1pnV8tfg6cE37NpoLFlAeGej40cbm8ZlvI3EHhrYI/3YmNkoduvuQ91DJJBrVgsFFpn7Lf5WqgPOoFSr61aFk7awgt6WWXazZukyuUDK62uRJf4tEcRzgybhH1ls5T4SsFfWARnRhnpoY2gqArRUZWiYn2ynbMZ4pRPQqVoHxPRQtt6hXJgiui61IIpHhx/1tG7CaC/Ptb67/64dL1OtjfJvMzZRxolxkj+fhSrgURp9aJKb4e2UDx59CizqDmfuaiGEwYj+6MXN1pifNRe9S2U+6Xx2bVduBo1Th/AAeHHZeUz++f249PjcYHvFp6W9zj+xbQKN5zc+Glwy4EcMlOIO8KSYbKbCSJ/Ubwc/YrmWpY34tjXmXofiMRHzWhDROo9LDPVaN8biy1R8rO9/wXi8GdTG9cxOhJQYDc6yVVKwHdB7NWpeWW3I5bC35AVclbNKZvwZyxgXzTz8Kdzyh4AiZoRHz7qav8v5G4dsFUrkZF9Fq+RteyxwJljkfyE6O1dTT6nG28yhcP0Lum151VCj2xzSdORQ/o:N1eqyv0ULmhQKYg0RKKQNE+bguoUyiI2iBzT9QEJzY4="
+  },
+  "body": null,
+  "method": "GET"
+});
+
+
+
+fetch("https://driverpracticaltest.dvsa.gov.uk/login",
+{
+  "headers": {
+    "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "accept-language": "en-GB,en-US;q=0.9,en;q=0.8",
+    "cache-control": "max-age=0",
+    "priority": "u=0, i",
+    "sec-ch-ua": "\"Google Chrome\";v=\"143\", \"Chromium\";v=\"143\", \"Not A(Brand\";v=\"24\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Windows\"",
+    "sec-fetch-dest": "document",
+    "sec-fetch-mode": "navigate",
+    "sec-fetch-site": "same-origin",
+    "sec-fetch-user": "?1",
+    "upgrade-insecure-requests": "1",
+    "cookie": "user-preferences-ibs=%7B%22analytics%22%3A%22on%22%2C%22browserUpgradePrompt%22%3A%22on%22%7D; _ga=GA1.4.1289271827.1763577380; _ga=GA1.1.1289271827.1763577380; incap_wafapi_sh_1979199=yo2WmnfsSdemCFkwSYx26hAkHmkAAAAAQUIPAAAAAACAoIDAAbnu3zXnK3MUDczjhjAs64L3Eksi; _gid=GA1.4.2086091867.1765911054; visid_incap_1979199=endPLbXVTHikfzgp00fSO8QMHmkAAAAARkIPAAAAAACAbBjBAbnu3zU538Qn6GQ/7u+Ff5vOiy9U; incap_ses_1332_1979199=V1fOP+6EkDMg1NGlATd8Ev/MQWkAAAAAv5wm3LGEo6vAyq3HAyZvRQ==; JSESSIONID=7CBD02BD5432EB36101DBF8C732E81C0; nlbi_1979199=MED2ACvqvDE8joTYzpe5SwAAAAB/uCs6kBo7ZQDMr5lfgtBP; reese84=3:hnYC5qkxA03zvqHnIpLHEQ==:Q/JBK85FXRAXk2GgXwb8+ja5tEY96L15OGOZs6ufyjyQX3yuu8J1A9aKwOStJIHf6DQ+au0uWnaTtC587YezjgNVm0Ez+g4JAT8w038blqPFVWTTsYMhx8UrnxOh+/yjrHVqLczLudkxC5NioOkfK4iNAJkqYMy/G5vWxg6zHzFx7EpX7wwfoE6Q5yeStiGBRgUZX3zWd5GCK8ba83eK+6Zt4++7aMQSvrZVkKZhvYPI4g6Trz+SfBpySgDhGeC0w2fQp3cSZYMS3JSyXqZ+warB23QEcFrjzSXNU6ejZHkCy93O4cHoFkm4KophMqeRdYeHZhvl+g/96qO70u+ku+/PwsilPxJP0OJ/WbMc6C5sLsn7EOiQGZYRF2F6TxYOlVQjto87TLcW+64J7tnGxOaENXrDIbavhRN/J/1yjXgqJS9wCsoE2vVfgwJAaBoJ89AGRGedwPV89HP0sH0y5djWK5vTujY9W+lV7AeTu3FxjE2b9q7cE8MMvSTKbdhhTXmL+LCczK1Tr8g9nETTXxJAL1erOcdu4PyokoIOpYFsp4PG93Lkvj79hN/UgCRidBWwFaYeKOKqX9NC4xnI3gUEcHgpMFHD3pdT/GSFl9sCH6PO5aVZ5iwfvX2IP5Ev:fWRf8HTTnm93TQtSYdeerZX0HfNZTQZNefxxO5nwalM=; AWSALB=aIv/yyRQv05UUuiXElQdRnaeQcmVfZW+YlR439ILE8OP5Am0S7VPXE0AUfaA75MqlQzHQRJ4owo8LQvaKxGmEcZvM914wnF0zEshMc/KQDj1xOzmPA6KrPNFgHRU; AWSALBCORS=aIv/yyRQv05UUuiXElQdRnaeQcmVfZW+YlR439ILE8OP5Am0S7VPXE0AUfaA75MqlQzHQRJ4owo8LQvaKxGmEcZvM914wnF0zEshMc/KQDj1xOzmPA6KrPNFgHRU; QueueITAccepted-SDFrts345E-V3_ibs2redirectprod=EventId%3Dibsredirectprod0915%26QueueId%3D87b43ef0-ec53-4a12-a48c-900b236c5533%26RedirectType%3Dsafetynet%26IssueTime%3D1765920005%26Hash%3D9f6fa59bcf4f4eafc4c99568155724343aa57e8d1ca3a032d5c1875ea0b7bd58; _gat=1; nlbi_1979199_2147483392=N+L2bXXc8hR4ExTOzpe5SwAAAABGNtBhr+qzbN6am69RoQMe; _ga_KMJ4GD3TK4=GS2.1.s1765920007$o12$g0$t1765920007$j60$l0$h0",
+    "Referer": "https://driverpracticaltest.dvsa.gov.uk/login"
+  },
+  "body": null,
+  "method": "GET"
+});
